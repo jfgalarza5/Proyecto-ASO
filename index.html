@@ -42,6 +42,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="login.html">Iniciar Sesion</a></li>
                                     <li><a class="dropdown-item" href="registro.html">Registrarse</a></li>
+                                    <li><a class="dropdown-item" href="usuarios.html">Usuarios</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -350,20 +351,7 @@
 
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('server_info.php')
-                .then(response => response.json())
-                .then(data => {
-                    alert('Servidor: ' + data.hostname + '\nIP: ' + data.ip);
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        });
-    </script>
-    
+    <script src="js/bootstrap.min.js"></script>    
     <script src="https://kit.fontawesome.com/5f232b4c5b.js" crossorigin="anonymous"></script>
 </body>
 </html>
